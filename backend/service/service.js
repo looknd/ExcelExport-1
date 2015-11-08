@@ -6,17 +6,17 @@ exports.createExcel = function (req, res) {
   var data = req.body.data;
 
   if (!data) {
-    res.status(400).send('Data boş!');
+    res.status(400).send('DATA_EMPTY');
   } else {
     if (typeof data !== 'string')
-      res.status(400).send('Data json değil!');
+      res.status(400).send('DATA_NOT_JSON_STRING');
 
     var order = new Order(JSON.parse(data));
     var request = new Request(order);
 
     request.default();
     if (!request.validate())
-      res.status(400).send('Data hatalı!');
+      res.status(400).send('DATA_NOT_VALIDATED');
 
     createExcel(request.getOrder())
       .then(function (result) {
