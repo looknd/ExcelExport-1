@@ -1,0 +1,14 @@
+# NodeJS
+node_modules
+*.log
+
+# IDEA
+.idea
+
+# Mac
+.DS_Store
+
+# Project
+*.xlsx
+
+

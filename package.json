@@ -1,0 +1,30 @@
+{
+  "name": "js-excel",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "grunt start"
+  },
+  "dependencies": {
+    "body-parser": "1.0.2",
+    "basic-auth": "1.0.3",
+    "connect-multiparty": "1.2.5",
+    "dotenv": "1.1.0",
+    "express": "4.12.4",
+    "grunt": "0.4.5",
+    "jade": "1.9.2",
+    "method-override": "1.0.0",
+    "msexcel-builder": "0.0.2",
+    "q": "1.4.1"
+  },
+  "devDependencies": {
+    "grunt-shell": "1.1.2"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ademilhan041/jsExcel"
+  }
+}
